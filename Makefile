@@ -1,5 +1,12 @@
 tracer: tracer.o shade.o find.o support.o refract.o g_bod.o g_bal.o
 	cc tracer.o shade.o find.o support.o refract.o g_bod.o g_bal.o -lm -o tracer
+
+pattopng: pattopng.c
+	cc pattopng.c -lpng -o pattopng
+
+distopng: distopng.c
+	cc distopng.c -lpng -o distopng
+
 find.o: find.c rtd.h extern.h macros.h
 	cc -c find.c 
 shade.o: shade.c rtd.h extern.h macros.h
@@ -14,3 +21,6 @@ g_bod.o: g_bod.c extern.h macros.h
 	cc -c g_bod.c  
 g_bal.o: g_bal.c extern.h rtd.h
 	cc -c g_bal.c  
+
+clean:
+	rm -f *.o data.dis
