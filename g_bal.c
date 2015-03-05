@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>	/* for malloc() */
 #include "rtd.h"
 #include "extern.h"
 g_bal (df)/* gets data for the balls, returns number of balls */
 FILE * df;
 {
     int     i;
-    double  x,
+    float  x,
             y,
             z,
             r,
@@ -15,7 +16,7 @@ FILE * df;
             dif,
             amb;
     for (i = 0;
-	    fscanf (df, "%F %F %F %F %F %F %F %F %F",
+	    fscanf (df, "%f %f %f %f %f %f %f %f %f",
 		&x, &y, &z, &r, &ior, &rfr, &rfl, &dif, &amb) != EOF;
 	    i++) {
 /* get some space for the ball */

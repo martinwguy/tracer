@@ -8,6 +8,7 @@
  *            by friedrich knauss (one tired programmer)       *
  ***************************************************************/
 #include <stdio.h>
+#include <stdlib.h>	/* for exit() */
 #include <math.h>
 #include "rtd.h"
 #include "macros.h"

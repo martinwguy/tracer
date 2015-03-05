@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>	/* for malloc() */
+#include <string.h>	/* for strlen() */
 #include <math.h>
 #include "extern.h"
 #include "macros.h"
