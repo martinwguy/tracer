@@ -1,5 +1,6 @@
 *.o
 tracer
+pngtopat
 pattopng
 distopng
 data.dis

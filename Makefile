@@ -1,6 +1,9 @@
 tracer: tracer.o shade.o find.o support.o refract.o g_bod.o g_bal.o
 	cc tracer.o shade.o find.o support.o refract.o g_bod.o g_bal.o -lm -o tracer
 
+pngtopat: pngtopat.c
+	cc pngtopat.c -lpng -o pngtopat
+
 pattopng: pattopng.c
 	cc pattopng.c -lpng -o pattopng
 
